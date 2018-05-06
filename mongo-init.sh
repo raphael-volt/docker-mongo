@@ -16,6 +16,10 @@ if [ -z ${MONGO_USER_PWD+x} ]; then
     MONGO_USER_PWD='default-pwd' 
 fi
 
+if [ -z ${MONGO_DBNAME+x} ]; then 
+    MONGO_DBNAME='defaultdb' 
+fi
+
 root=$MONGO_INITDB_ROOT_USERNAME
 rootpwd=$MONGO_INITDB_ROOT_PASSWORD
 user=$MONGO_USER_NAME
@@ -28,7 +32,7 @@ createUserAndDb() {
 
 createUserAndDb
 
-user="test-$MONGO_USER_NAME"
-dbname="test-$MONGO_DBNAME"
+user="test-$user"
+dbname="test-$dbname"
 
 createUserAndDb
