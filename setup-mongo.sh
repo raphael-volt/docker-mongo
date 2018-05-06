@@ -1,4 +1,5 @@
-#!/usr/bin/env bash
+#!/bin/bash
+
 echo "Mongo admin $ROOT_USER:$ROOT_PWD"
 echo "Creating new mongo db: $APP_DB"
 echo "Creating new mongo user"
