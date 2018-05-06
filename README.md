@@ -2,11 +2,11 @@
 
 ## Environment
 
-- APP_DB
-- APP_USER
-- APP_PWD
-- ROOT_USER
-- ROOT_PWD
+- MONGO_USER_NAME
+- MONGO_USER_PWD
+- MONGO_DBNAME
+- MONGO_INITDB_ROOT_USERNAME
+- MONGO_INITDB_ROOT_PASSWORD
 
-Create users (root, APP_USER and test-APP_USER) and databases (APP_DB and test-APP_DB).
+Create users (root, user and test-user) and databases (app and test).
 
